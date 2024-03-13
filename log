@@ -141,3 +141,14 @@ Wed 13 Mar 2024 09:14:42 PM UTC:
  tests:  0|6
 total_score: 10/70
 da901e2
+Wed 13 Mar 2024 09:19:03 PM UTC: 
+ exercises.c | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:38:9: error: variable ‘arr2’ set but not used [-Werror=unused-but-set-variable]
+   38 |     int arr2[size];
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+25678c4
