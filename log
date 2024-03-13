@@ -38,3 +38,34 @@ Wed 13 Mar 2024 08:46:56 PM UTC:
  tests:  0|7
 total_score: 0/70
 a24f0c1
+Wed 13 Mar 2024 08:49:38 PM UTC: 
+ exercises.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:23:9: error: ‘true’ undeclared (first use in this function)
+   23 |   while(true){
+      |         ^~~~
+exercises.c:6:1: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    5 | #include <string.h>
+  +++ |+#include <stdbool.h>
+    6 | 
+exercises.c:23:9: note: each undeclared identifier is reported only once for each function it appears in
+   23 |   while(true){
+      |         ^~~~
+exercises.c:25:13: error: ‘i’ undeclared (first use in this function)
+   25 |     if (arr[i] > arr[i +1]){
+      |             ^
+exercises.c:24:9: error: variable ‘max’ set but not used [-Werror=unused-but-set-variable]
+   24 |     int max = 0;
+      |         ^~~
+exercises.c:29:10: error: ‘max’ undeclared (first use in this function); did you mean ‘fmax’?
+   29 |   return max;
+      |          ^~~
+      |          fmax
+exercises.c:30:1: error: control reaches end of non-void function [-Werror=return-type]
+   30 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8ab1627
