@@ -152,3 +152,17 @@ exercises.c:38:9: error: variable ‘arr2’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 25678c4
+Wed 13 Mar 2024 09:19:22 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:44:21: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   44 |             arr2[i] = arr[j];
+      |                     ^
+exercises.c:38:10: error: variable ‘arr2’ set but not used [-Werror=unused-but-set-variable]
+   38 |     int *arr2[size];
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+50904ad
