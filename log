@@ -1,1 +1,11 @@
 
+Wed 13 Mar 2024 08:42:05 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘test_findMax’:
+test.c:91:18: error: implicit declaration of function ‘findMax’ [-Werror=implicit-function-declaration]
+   91 |     int result = findMax(arr, size);
+      |                  ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cedf7b0
