@@ -384,3 +384,24 @@ Sat 16 Mar 2024 07:09:56 PM UTC:
  tests:  0|6
 total_score: 10/70
 2be8a12
+Sat 16 Mar 2024 07:48:53 PM UTC: 
+ exercises.c | 19 +++++++++++++++++--
+ 1 file changed, 17 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:74:3: error: ‘newSize’ undeclared (first use in this function)
+   74 |   newSize = size1 + size2;
+      |   ^~~~~~~
+exercises.c:74:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:111:23: error: incompatible types when assigning to type ‘Autor’ from type ‘Autor *’
+  111 |   nuevoLibro->autor = (Autor*) malloc (1 * sizeof(Autor));
+      |                       ^
+exercises.c:115:27: error: invalid type argument of ‘->’ (have ‘Autor’)
+  115 |   strcpy(nuevoLibro->autor->nombre, nombreAutor);
+      |                           ^~
+exercises.c:116:20: error: invalid type argument of ‘->’ (have ‘Autor’)
+  116 |   nuevoLibro->autor->anioNacimiento = anioNacimiento;
+      |                    ^~
+Compilation failed
+ae39623

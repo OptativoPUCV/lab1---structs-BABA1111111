@@ -69,7 +69,13 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) {
+
+  newSize = size1 + size2;
+  
+                       }
+
+
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -99,7 +105,16 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) {
+
+  Libro *nuevoLibro = (Libro*) malloc (1 * sizeof(Libro));
+  nuevoLibro->autor = (Autor*) malloc (1 * sizeof(Autor));
+
+  strcpy(nuevoLibro->titulo, titulo);
+  nuevoLibro->anioPublicacion = anioPublicacion;
+  strcpy(nuevoLibro->autor->nombre, nombreAutor);
+  nuevoLibro->autor->anioNacimiento = anioNacimiento;
+                      }
 
 /*
 Ejercicio 7: Lista enlazada de números
