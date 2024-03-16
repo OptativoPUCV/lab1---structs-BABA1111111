@@ -670,3 +670,21 @@ exercises.c:113:20: error: expected ‘;’ before ‘}’ token
       |                    ;
 Compilation failed
 bea2393
+Sat 16 Mar 2024 11:52:44 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Sat 16 Mar 2024 11:52:52 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Sat 16 Mar 2024 11:53:44 PM UTC: 
+ exercises.c | 17 +++--------------
+ 1 file changed, 3 insertions(+), 14 deletions(-)
+Sat 16 Mar 2024 11:54:58 PM UTC: 
+ exercises.c | 19 ++++---------------
+ 1 file changed, 4 insertions(+), 15 deletions(-)
+Sat 16 Mar 2024 11:55:19 PM UTC: 
+ exercises.c | 20 +++++---------------
+ 1 file changed, 5 insertions(+), 15 deletions(-)
+ tests:  0|3
+total_score: 40/70
+91346ac
