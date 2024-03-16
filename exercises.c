@@ -44,8 +44,8 @@ void reverseArray(int arr[], int size) {
 //             arr2[i] = arr[j];
 //           }
 //       }
-//   return;
-// }
+  return;
+}
 /*
 Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
