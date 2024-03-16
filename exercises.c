@@ -47,7 +47,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   
   int *nuevoArr= (int *)malloc(size * sizeof(int));
   if (nuevoArr == NULL){
-    printf("ola no hay")
+    printf("ola no hay");
   }
   int cont = 0;
   for (int i = 0; i < size; i++)
