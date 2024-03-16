@@ -28,24 +28,24 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
 
-  // for (int i = size - 1; i >= 0; i--)
-  //   {
-  //     int temp = arr[i];
-  //     arr[i] = arr[size - i - 1];
-  //     arr[size - i - 1] = temp;
-  //   }
+  for (int i = size - 1; i >= 0; i--)
+    {
+      int temp = arr[i];
+      arr[i] = arr[size - i - 1];
+      arr[size - i - 1] = temp;
+    }
 
-    int arr2[size];
+//     int arr2[size];
   
-    for (int i = 0; i < size; i++)
-      {
-        for (int j = size - 1; i >= 0; i--)
-          {
-            arr2[i] = arr[j];
-          }
-      }
-  return;
-}
+//     for (int i = 0; i < size; i++)
+//       {
+//         for (int j = size - 1; i >= 0; i--)
+//           {
+//             arr2[i] = arr[j];
+//           }
+//       }
+//   return;
+// }
 /*
 Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
