@@ -555,3 +555,14 @@ exercises.c:103:13: error: ‘i’ undeclared (first use in this function)
       |             ^
 Compilation failed
 882fad4
+Sat 16 Mar 2024 11:47:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:103:13: error: ‘i’ undeclared (first use in this function)
+  103 |     if (arr[i + 1] > arr[i]){
+      |             ^
+exercises.c:103:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d05c9d1
