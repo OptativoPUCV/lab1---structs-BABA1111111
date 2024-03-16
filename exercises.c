@@ -110,7 +110,7 @@ int checkSorted(int arr[], int size) {
           ordencillo = 0;
     }
   }
-  return ordencillo; }
+  return ordencillo };
 
 /*
 Ejercicio 6: Información de una Biblioteca
