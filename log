@@ -359,3 +359,16 @@ Sat 16 Mar 2024 07:05:21 PM UTC:
  tests:  0|6
 total_score: 10/70
 90e0b11
+Sat 16 Mar 2024 07:08:07 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:25: error: expected ‘;’ before ‘}’ token
+   50 |     printf("ola no hay")
+      |                         ^
+      |                         ;
+   51 |   }
+      |   ~                      
+Compilation failed
+4e0cca3
