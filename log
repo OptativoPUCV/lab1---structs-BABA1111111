@@ -447,3 +447,23 @@ exercises.c:111:3: error: ‘nuevoLibro’ undeclared (first use in this functio
 exercises.c:111:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b4b427d
+Sat 16 Mar 2024 07:52:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:110:10: error: ‘libro’ redeclared as different kind of symbol
+  110 |   Libro *libro = (Libro*) malloc (1 * sizeof(Libro));
+      |          ^~~~~
+exercises.c:107:30: note: previous definition of ‘libro’ with type ‘Libro *’
+  107 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |                       ~~~~~~~^~~~~
+exercises.c:111:18: error: incompatible types when assigning to type ‘Autor’ from type ‘Autor *’
+  111 |   libro->autor = (Autor*) malloc (1 * sizeof(Autor));
+      |                  ^
+exercises.c:115:10: error: ‘nuevoLibro’ undeclared (first use in this function)
+  115 |   strcpy(nuevoLibro->autor.nombre, nombreAutor);
+      |          ^~~~~~~~~~
+exercises.c:115:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f413171

@@ -108,7 +108,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) {
 
   Libro *libro = (Libro*) malloc (1 * sizeof(Libro));
-  nuevoLibro->autor = (Autor*) malloc (1 * sizeof(Autor));
+  libro->autor = (Autor*) malloc (1 * sizeof(Autor));
 
   strcpy(libro->titulo, titulo);
   libro->anioPublicacion = anioPublicacion;
