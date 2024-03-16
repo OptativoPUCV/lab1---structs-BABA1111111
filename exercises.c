@@ -98,7 +98,7 @@ int checkSorted(int arr[], int size) {
   //       ordencillo = 0;
   //     }
   //   }
-  i = 0
+  i = 0;
   while (1){
     if (arr[i + 1] > arr[i]){
       ordencillo = 1;
