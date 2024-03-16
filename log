@@ -566,3 +566,33 @@ exercises.c:103:13: error: ‘i’ undeclared (first use in this function)
 exercises.c:103:13: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d05c9d1
+Sat 16 Mar 2024 11:48:49 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Sat 16 Mar 2024 11:48:57 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Sat 16 Mar 2024 11:50:34 PM UTC: 
+ exercises.c | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:101:3: error: ‘i’ undeclared (first use in this function)
+  101 |   i = 0
+      |   ^
+exercises.c:101:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:101:8: error: expected ‘;’ before ‘while’
+  101 |   i = 0
+      |        ^
+      |        ;
+  102 |   while (1){
+      |   ~~~~~ 
+exercises.c:87:7: error: variable ‘ordencillo’ set but not used [-Werror=unused-but-set-variable]
+   87 |   int ordencillo = 0;
+      |       ^~~~~~~~~~
+exercises.c:113:22: error: control reaches end of non-void function [-Werror=return-type]
+  113 |   return ordencillo; }
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+80391c4
