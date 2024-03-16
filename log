@@ -483,3 +483,13 @@ exercises.c:111:18: error: incompatible types when assigning to type ‘Autor’
       |                  ^
 Compilation failed
 319ef19
+Sat 16 Mar 2024 07:53:21 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:111:18: error: incompatible types when assigning to type ‘Autor’ from type ‘Autor *’
+  111 |   libro->autor = (Autor*) malloc (1 * sizeof(Autor));
+      |                  ^
+Compilation failed
+f8cd94b
