@@ -52,7 +52,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     {
       if (arr[i] % 2 == 0)
       {
-        nuevoArr[i] = arr[i];
+        nuevoArr[cont] = arr[i];
         cont++;
       }
     }
