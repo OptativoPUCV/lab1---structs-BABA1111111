@@ -94,7 +94,8 @@ int checkSorted(int arr[], int size) {
       }
     }
     else if (arr[i + 1] < arr[i]){
-          ordencillo = -1;
+      if (ordencillo != 1 || ordencillo != 4){
+        ordencillo = -1;
     }
     else{
           ordencillo = 0;
