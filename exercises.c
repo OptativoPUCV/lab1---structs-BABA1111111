@@ -74,7 +74,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   // int newSize = size1 + size2;
   // int *nuevoArr = (int *)malloc(newSize * sizeof(int));
   
-  //                      }
+                       }
 
 
 
