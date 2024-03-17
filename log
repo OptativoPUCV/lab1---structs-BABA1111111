@@ -959,3 +959,14 @@ Sun 17 Mar 2024 12:48:03 AM UTC:
  tests:  0|3
 total_score: 40/70
 ed4f776
+Sun 17 Mar 2024 12:53:08 AM UTC: 
+ exercises.c | 36 ++++++++++++++++++++----------------
+ 1 file changed, 20 insertions(+), 16 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:8: error: unused variable ‘nuevoArr’ [-Werror=unused-variable]
+   75 |   int *nuevoArr = (int *)malloc(newSize * sizeof(int));
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9c2a151
