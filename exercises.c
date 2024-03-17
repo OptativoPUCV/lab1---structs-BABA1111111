@@ -74,29 +74,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   // int newSize = size1 + size2;
   // int *nuevoArr = (int *)malloc(newSize * sizeof(int));
 
-  int tallaArray = size1 + size2;
-  int *arr3 = (int *)malloc(sizeof(int) * tallaArray);
-  if (arr3 == NULL) exit(EXIT_FAILURE);
-
-  int i, j, k;
-
-  for (i = 0, j = 0, k = 0; i < size1 && j < size2; ) {
-      if (arr1[i] < arr2[j]) {
-          arr3[k++] = arr1[i++];
-      } else {
-          arr3[k++] = arr2[j++];
-      }
-  }
-
-  for (; i < size1; i++) {
-      arr3[k++] = arr1[i];
-  }
-
-  for (; j < size2; j++) {
-      arr3[k++] = arr2[j];
-  }
-
-  return arr3;
+  
                        }
 
 
@@ -110,14 +88,14 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size) {
   int orden = 0;
 
-  for (int i = 0; i < size - 1; i++) {
+  for (int i = 0; i <= size - 1; i++) {
     if (arr[i] < arr[i + 1]) {
-      if (orden != -1 || orden != 0) {
+      if (orden == -1 || orden == 0) {
         orden = 1;
       }
     }
-    else if (arr[i] > arr[i + 1]) {
-      if (orden != 1 || orden != 0) {
+    else if (arr[i] >= arr[i + 1]) {
+      if (orden == 1 || orden !== 0) {
         orden = -1;
       }
     }
