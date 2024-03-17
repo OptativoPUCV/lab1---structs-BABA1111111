@@ -103,7 +103,13 @@ int checkSorted(int arr[], int size) {
     }
     i++;
   }
-  return orden;
+
+  if (orden != 0){
+    return orden;
+  }
+  else{
+    return orden;
+  }
 }
 
 /*
