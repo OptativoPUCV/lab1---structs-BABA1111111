@@ -97,10 +97,11 @@ int checkSorted(int arr[], int size) {
         orden = -1;
       }
     }
+  }
 
-    else{
-      orden = 0;
-    }
+  if (orden == 0)
+  {
+    return orden = 0;
   }
   
   return orden;
@@ -150,4 +151,7 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) { 
+  
+  return NULL;
+}
