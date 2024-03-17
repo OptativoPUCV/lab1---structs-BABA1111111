@@ -976,3 +976,14 @@ Sun 17 Mar 2024 12:53:19 AM UTC:
  tests:  0|2
 total_score: 50/70
 206eeec
+Sun 17 Mar 2024 12:56:26 AM UTC: 
+ exercises.c | 22 +++++++++++++++++++---
+ 1 file changed, 19 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:74:7: error: unused variable ‘tallaArray’ [-Werror=unused-variable]
+   74 |   int tallaArray = size1 + size2;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+274734b
