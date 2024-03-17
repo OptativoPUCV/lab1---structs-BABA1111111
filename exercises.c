@@ -98,9 +98,6 @@ int checkSorted(int arr[], int size) {
         orden = -1;
       }
     }
-    else{
-          orden = 0;
-    }
     i++;
   }
 
