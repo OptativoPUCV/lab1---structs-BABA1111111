@@ -71,7 +71,8 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
 
-  // newSize = size1 + size2;
+  int newSize = size1 + size2;
+  int *nuevoArr = (int *)malloc(newSize * sizeof(int));
   
                        }
 
@@ -84,24 +85,23 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) {
-  int orden = 0;
+  int orden = 2;
 
   for (int i = 0; i < size - 1; i++) {
     if (arr[i] < arr[i + 1]) {
-      if (orden == 0 || orden == -1) {
+      if (orden == 1 || orden == 2) {
         orden = 1;
       }
     }
     else if (arr[i] > arr[i + 1]) {
-      if (orden == 0 || orden == 1) {
+      if (orden == -1 || orden == 2) {
         orden = -1;
       }
     }
-  }
 
-  if (orden == 0)
-  {
-    return orden = 0;
+    else{
+      orden = 0;
+    }
   }
   
   return orden;
@@ -152,6 +152,14 @@ typedef struct nodo {
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) { 
+
+  Nodo* lista = (Nodo*) malloc(1 * sizeof(Nodo));
+  lista->numero = arr[0];
+  lista->siguiente = (Nodo*) malloc(1 * sizeof(Nodo));
+  Nodo* elemActual = lista;
+  for(int i = 1; i < size; i++){
+    elemActual
+  }
   
   return NULL;
 }

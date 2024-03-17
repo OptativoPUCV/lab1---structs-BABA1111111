@@ -826,3 +826,24 @@ Sun 17 Mar 2024 12:21:12 AM UTC:
  tests:  0|4
 total_score: 30/70
 ad4f5d4
+Sun 17 Mar 2024 12:34:46 AM UTC: 
+ exercises.c | 24 ++++++++++++++++--------
+ 1 file changed, 16 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:8: error: unused variable ‘nuevoArr’ [-Werror=unused-variable]
+   75 |   int *nuevoArr = (int *)malloc(newSize * sizeof(int));
+      |        ^~~~~~~~
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:161:5: error: statement with no effect [-Werror=unused-value]
+  161 |     elemActual
+      |     ^~~~~~~~~~
+exercises.c:161:15: error: expected ‘;’ before ‘}’ token
+  161 |     elemActual
+      |               ^
+      |               ;
+  162 |   }
+      |   ~            
+cc1: all warnings being treated as errors
+Compilation failed
+e09d526
