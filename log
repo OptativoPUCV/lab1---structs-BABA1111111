@@ -847,3 +847,14 @@ exercises.c:161:15: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 e09d526
+Sun 17 Mar 2024 12:35:03 AM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:8: error: unused variable ‘nuevoArr’ [-Werror=unused-variable]
+   75 |   int *nuevoArr = (int *)malloc(newSize * sizeof(int));
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2073658
