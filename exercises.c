@@ -87,12 +87,12 @@ int checkSorted(int arr[], int size) {
   int orden = 0;
 
   for (int i = 0; i < size - 1; i++) {
-    if (arr[i + 1] > arr[i]) {
+    if (arr[i] < arr[i + 1]) {
       if (orden == 0 || orden == -1) {
         orden = 1;
       }
     }
-    else if (arr[i + 1] < arr[i]) {
+    else if (arr[i] > arr[i + 1]) {
       if (orden == 0 || orden == 1) {
         orden = -1;
       }
