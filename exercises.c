@@ -89,12 +89,12 @@ int checkSorted(int arr[], int size) {
   
   while (i < size - 1){
     if (arr[i] < arr[i + 1]){
-      if (orden == -1 || orden == 0){
+      if (orden != -1 || orden != 0){
         orden = 1;
       }
     }
     else if (arr[i] > arr[i + 1]){
-      if (orden == 1 || orden == 0){
+      if (orden != 1 || orden != 0){
         orden = -1;
       }
     }
