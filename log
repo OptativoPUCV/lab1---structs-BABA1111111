@@ -987,3 +987,9 @@ exercises.c:74:7: error: unused variable ‘tallaArray’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 274734b
+Sun 17 Mar 2024 12:56:42 AM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  0|1
+total_score: 60/70
+2605e9e
